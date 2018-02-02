@@ -91,7 +91,7 @@ puts [1, 2, 3].delete(4) { "not found" }
 # pop
 # applies to: array
 # input (optional): non-negative integer
-# output: item in the array; nil if array is empty
+# return: item in the array; nil if array is empty
 
 # use: removes the last element from the array and returns it; returns nil if array is empty. if optional integer n is given, removes and returns them in an array. if n = 0 then returns the last item
 
@@ -99,3 +99,68 @@ puts [1, 2, 3, 4, 5].pop
 puts [1, 2, 3, 4, 5].pop(2)
 puts [1, 2, 3, 4, 5].pop(0)
 puts [1, 2, 3, 4, 5].pop(1)
+
+
+### HASH ###
+
+# to_a
+# applies to: hash
+# input: none
+# return: array
+
+# use: converts a hash to a nested array of [key, value] arrays
+
+h = {a: "A", b: "B", c: "C"}
+puts a = h.to_a
+
+
+# has_key?
+# applies to: hash
+# input: key
+# return: boolean
+
+# use: returns true if key is present in the hash
+
+puts h.has_key?(:a)
+
+
+# value?
+# applies to: hash
+# input: value
+# output: boolean
+
+# use: returns true if value is present in the hash
+
+puts h.has_value?("A")
+puts h.has_value?("D")
+
+
+### TIME ###
+
+# now
+# input: none
+# return: a Time object
+
+# use: creates a new Time object for the current time
+
+puts Time.now
+puts Time.new
+
+
+### FILE ###
+
+# exist?
+# input: file name
+# return: boolean
+
+# use: returns true if the file name exists
+
+puts File.exist?("ruby.rb")
+
+# extname
+# input: path
+# return: string
+
+# use: extension of the file in the path, which is the portion of the name starting with the last period
+
+puts File.extname("./ruby.rb")
