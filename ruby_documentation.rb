@@ -112,55 +112,60 @@ puts [1, 2, 3, 4, 5].pop(1)
 
 h = {a: "A", b: "B", c: "C"}
 puts a = h.to_a
+puts {}
+puts [1, 2, 3]
+puts {a: "A", b: "B", c: "C"}
 
 
-# has_key?
-# applies to: hash
-# input: key
-# return: boolean
-
-# use: returns true if key is present in the hash
-
-puts h.has_key?(:a)
-
-
-# value?
-# applies to: hash
-# input: value
-# output: boolean
-
-# use: returns true if value is present in the hash
-
-puts h.has_value?("A")
-puts h.has_value?("D")
-
-
-### TIME ###
-
-# now
-# input: none
-# return: a Time object
-
-# use: creates a new Time object for the current time
-
-puts Time.now
-puts Time.new
-
-
-### FILE ###
-
-# exist?
-# input: file name
-# return: boolean
-
-# use: returns true if the file name exists
-
-puts File.exist?("ruby.rb")
-
-# extname
-# input: path
-# return: string
-
-# use: extension of the file in the path, which is the portion of the name starting with the last period
-
-puts File.extname("./ruby.rb")
+# # has_key?
+# # applies to: hash
+# # input: key
+# # return: boolean
+#
+# # use: returns true if key is present in the hash
+#
+# puts h.has_key?(:a)
+#
+#
+# # value?
+# # applies to: hash
+# # input: value
+# # output: boolean
+#
+# # use: returns true if value is present in the hash
+#
+# puts h.has_value?("A")
+# puts h.has_value?("D")
+#
+#
+# ### TIME ###
+#
+# # now
+# # input: none
+# # return: a Time object
+#
+# # use: creates a new Time object for the current time
+#
+# puts Time.now
+# puts Time.new
+#
+#
+# ### FILE ###
+#
+# # exist?
+# # input: file name
+# # return: boolean
+#
+# # use: returns true if the file name exists
+#
+# puts File.exist?("ruby.rb")
+# # puts exist?("ruby.rb")
+#
+#
+# # extname
+# # input: path
+# # return: string
+#
+# # use: extension of the file in the path, which is the portion of the name starting with the last period
+#
+# puts File.extname("./ruby.rb")
